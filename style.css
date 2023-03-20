@@ -1,0 +1,15 @@
+*{
+    margin: 10;
+    padding: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    }
+
+    body {
+        background-image: url("image2.png");
+        height: fit-content;
+        width: fit-content;
+      }
+
+    
+    
