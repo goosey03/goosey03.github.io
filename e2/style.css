@@ -1,0 +1,41 @@
+/* Changed the documents width and height to better suit the layout of the recipes. The Auto feature allows the document to adjust to scale. */
+
+*{
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+
+html *
+{
+   font-family:'Courier New', Courier, monospace !important;
+}
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* I changed the overall font of the webiste and changed the background and text colours to better suit 
+a rustic feel for the website. */
+:root{
+  --col-01:#878767;
+  --col-02:#ffffff;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  --border: 5px solid var(--col-02);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 2vw;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+}
+
