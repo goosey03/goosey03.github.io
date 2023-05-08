@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- JAMES GOUSIAS COMMENTS ON Experiment 4 
+Ive gone for a more conservative approach on the media player and 
+kept the simple format by adjusting the sizing of the video to suit nicely in the 
+frame of the website. Adjusted the margins to allow or some space between the video and 
+the background gradient which fits the colour of the video and the existing palette
+with the yellow options. Ive decided to add a loop feature which allows for the video to play infinite
+Ive also changed the few of the colours in the file standout and to tie in with the 
+visuals .
+-->
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Experiment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+      <div class="topnav">
+        <h1>
+          <a> Media Player Interactive Media</a>
+        </h1>
+      </div>
+
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+
+        <button class="video-control-button" id="loopButton"></button>
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
